@@ -18,14 +18,13 @@ import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.sqlite.SQLiteConfig;
 
 /**
  *
  * @author jonatan
  */
 public class userData {
-     static Connection cn = Conn.connectSQLite();
+     static Connection cn = Conn.connectMysql();
     static PreparedStatement ps;
     
     static Date dt = new Date();
